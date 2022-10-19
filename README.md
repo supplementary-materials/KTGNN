@@ -1,7 +1,7 @@
 # KTGNN
 Source code and datasets (twitter) of KTGNN.
 
-<img src="C:\Users\Ayden\Desktop\WWW2023\KTGNN\model_archtecture.png" style="zoom:75%;" />
+<img src="model_archtecture.png" style="zoom:75%;" />
 
 ​																**Figure 1: Overview of KTGNN**
 
