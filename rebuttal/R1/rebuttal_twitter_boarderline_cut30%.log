@@ -1,0 +1,1234 @@
+repeat 1/1
+Data(x=[21014, 1836], edge_index=[2, 1346702], y=[21014], central_mask=[21014], train_mask=[21014], val_mask=[21014], test_mask=[21014])
+AdaptedGAT(
+  (convs): ModuleList(
+    (0): AdaptedConv(256, 64)
+  )
+  (complementor): Adapted_complementor(
+    (input_layer_o): Linear(300, 128, bias=False)
+    (input_layer_u): Linear(1536, 128, bias=False)
+    (adapted_layer): Adapted_complete_layer(dim_share:128, dim_unshare:128)
+    (layers): ModuleList()
+  )
+  (bns): ModuleList(
+    (0): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (clf_base): AdaptedConv(64, 2)
+  (clf_target): AdaptedConv(64, 2)
+  (clf_transformer): Sequential(
+    (0): Linear(64, 64, bias=True)
+    (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Linear(64, 64, bias=True)
+  )
+)
+auto fixed data split seed to 0, model init seed to 0
+Data(x=[21014, 1836], edge_index=[2, 1346702], y=[21014], central_mask=[21014], train_mask=[21014], val_mask=[21014], test_mask=[21014])
+[Dataset-Twitter()] train_num:959, val_num:125, test_num:125, class_num:2
+Adjusting learning rate of group 0 to 1.0000e-03.
+0 torch.Size([2, 630391])
+1.24504816532135 0.7969374656677246 0.766208291053772
+Loss_clf:1.340 | Loss_dist:9.855 | Loss_kl:0.327
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 001, Loss:11.1954 Train: 0.5245, Val:0.6160, Test: 0.5760, Time(s/epoch):2.2735
+0.9863606095314026 0.8548616170883179 0.6948410868644714
+Loss_clf:1.075 | Loss_dist:6.211 | Loss_kl:0.195
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 002, Loss:7.2861 Train: 0.4411, Val:0.6320, Test: 0.5760, Time(s/epoch):0.6348
+0.828072190284729 0.7425131797790527 0.6912851333618164
+Loss_clf:0.853 | Loss_dist:3.884 | Loss_kl:0.081
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 003, Loss:4.7374 Train: 0.4421, Val:0.4000, Test: 0.4000, Time(s/epoch):0.1333
+0.7338893413543701 0.698119044303894 0.7128812670707703
+Loss_clf:0.786 | Loss_dist:2.454 | Loss_kl:0.066
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 004, Loss:3.2400 Train: 0.4390, Val:0.4000, Test: 0.4000, Time(s/epoch):0.1416
+0.7147239446640015 0.7379320859909058 0.7192028164863586
+Loss_clf:0.767 | Loss_dist:1.616 | Loss_kl:0.045
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 005, Loss:2.3825 Train: 0.4390, Val:0.4000, Test: 0.4000, Time(s/epoch):0.1441
+0.6771577596664429 0.8363541960716248 0.6910455226898193
+Loss_clf:0.792 | Loss_dist:1.144 | Loss_kl:0.072
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 006, Loss:1.9366 Train: 0.4400, Val:0.4000, Test: 0.4000, Time(s/epoch):0.1418
+0.691970944404602 0.6944882273674011 0.7020695805549622
+Loss_clf:0.753 | Loss_dist:0.896 | Loss_kl:0.058
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 007, Loss:1.6485 Train: 0.4390, Val:0.6400, Test: 0.6400, Time(s/epoch):0.1420
+0.7203564643859863 0.7078055739402771 0.6671638488769531
+Loss_clf:0.746 | Loss_dist:0.764 | Loss_kl:0.042
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 008, Loss:1.5103 Train: 0.4348, Val:0.6160, Test: 0.5760, Time(s/epoch):0.1443
+0.6801500916481018 0.7460938096046448 0.6690077781677246
+Loss_clf:0.733 | Loss_dist:0.684 | Loss_kl:0.039
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 009, Loss:1.4168 Train: 0.5068, Val:0.6000, Test: 0.5920, Time(s/epoch):0.1428
+0.6837784647941589 0.7828025221824646 0.6777234077453613
+Loss_clf:0.744 | Loss_dist:0.614 | Loss_kl:0.037
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 010, Loss:1.3575 Train: 0.5089, Val:0.6000, Test: 0.6000, Time(s/epoch):0.1430
+0.6790182590484619 0.720820426940918 0.6856858730316162
+Loss_clf:0.726 | Loss_dist:0.547 | Loss_kl:0.035
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 011, Loss:1.2731 Train: 0.5099, Val:0.6000, Test: 0.6000, Time(s/epoch):0.1426
+0.6841183304786682 0.6933300495147705 0.6861695051193237
+Loss_clf:0.717 | Loss_dist:0.473 | Loss_kl:0.030
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 012, Loss:1.1898 Train: 0.5109, Val:0.6000, Test: 0.6000, Time(s/epoch):0.1402
+0.6716142296791077 0.6772000193595886 0.6705614924430847
+Loss_clf:0.698 | Loss_dist:0.403 | Loss_kl:0.025
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 013, Loss:1.1001 Train: 0.5109, Val:0.6000, Test: 0.6000, Time(s/epoch):0.1422
+0.6806198954582214 0.6680773496627808 0.6423153281211853
+Loss_clf:0.689 | Loss_dist:0.345 | Loss_kl:0.021
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 014, Loss:1.0343 Train: 0.5120, Val:0.6000, Test: 0.6000, Time(s/epoch):0.1429
+0.67709881067276 0.6153572201728821 0.6599645018577576
+Loss_clf:0.672 | Loss_dist:0.300 | Loss_kl:0.014
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 015, Loss:0.9717 Train: 0.5162, Val:0.6000, Test: 0.6000, Time(s/epoch):0.1426
+0.6514410972595215 0.6891488432884216 0.6713736057281494
+Loss_clf:0.679 | Loss_dist:0.269 | Loss_kl:0.013
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 016, Loss:0.9475 Train: 0.5172, Val:0.6080, Test: 0.6000, Time(s/epoch):0.1425
+0.6321734189987183 0.6687319874763489 0.6535085439682007
+Loss_clf:0.658 | Loss_dist:0.238 | Loss_kl:0.012
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 017, Loss:0.8961 Train: 0.5182, Val:0.6000, Test: 0.6000, Time(s/epoch):0.1457
+0.6391595602035522 0.6531465649604797 0.6579393148422241
+Loss_clf:0.661 | Loss_dist:0.214 | Loss_kl:0.014
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 018, Loss:0.8747 Train: 0.5245, Val:0.6240, Test: 0.6720, Time(s/epoch):0.1416
+0.6328768730163574 0.6155663728713989 0.6489044427871704
+Loss_clf:0.644 | Loss_dist:0.189 | Loss_kl:0.012
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 019, Loss:0.8340 Train: 0.7049, Val:0.6960, Test: 0.7680, Time(s/epoch):0.1476
+0.6248458027839661 0.626842200756073 0.6519503593444824
+Loss_clf:0.644 | Loss_dist:0.165 | Loss_kl:0.012
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 020, Loss:0.8094 Train: 0.6361, Val:0.6800, Test: 0.7760, Time(s/epoch):0.1467
+0.6131693124771118 0.6165176033973694 0.645556628704071
+Loss_clf:0.634 | Loss_dist:0.140 | Loss_kl:0.012
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 021, Loss:0.7737 Train: 0.6048, Val:0.6880, Test: 0.7840, Time(s/epoch):0.1432
+0.6099011898040771 0.6239777207374573 0.640444815158844
+Loss_clf:0.632 | Loss_dist:0.113 | Loss_kl:0.011
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 022, Loss:0.7447 Train: 0.6131, Val:0.6240, Test: 0.6640, Time(s/epoch):0.1432
+0.5974618196487427 0.6263827085494995 0.6470118761062622
+Loss_clf:0.629 | Loss_dist:0.094 | Loss_kl:0.012
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 023, Loss:0.7229 Train: 0.6319, Val:0.6000, Test: 0.6000, Time(s/epoch):0.1429
+0.6017246842384338 0.5750986933708191 0.6264121532440186
+Loss_clf:0.612 | Loss_dist:0.076 | Loss_kl:0.011
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 024, Loss:0.6878 Train: 0.6663, Val:0.6000, Test: 0.6000, Time(s/epoch):0.1439
+0.5793025493621826 0.5792862772941589 0.6034650206565857
+Loss_clf:0.596 | Loss_dist:0.062 | Loss_kl:0.011
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 025, Loss:0.6583 Train: 0.6757, Val:0.6000, Test: 0.6000, Time(s/epoch):0.1423
+0.5673742890357971 0.5864996314048767 0.6019741296768188
+Loss_clf:0.591 | Loss_dist:0.052 | Loss_kl:0.010
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 026, Loss:0.6434 Train: 0.6767, Val:0.6000, Test: 0.6000, Time(s/epoch):0.1428
+0.5601869821548462 0.5580018162727356 0.5996320843696594
+Loss_clf:0.580 | Loss_dist:0.044 | Loss_kl:0.011
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 027, Loss:0.6238 Train: 0.6913, Val:0.6000, Test: 0.6080, Time(s/epoch):0.1426
+0.5604540109634399 0.5431471467018127 0.5767762660980225
+Loss_clf:0.569 | Loss_dist:0.039 | Loss_kl:0.009
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 028, Loss:0.6083 Train: 0.6861, Val:0.6160, Test: 0.6400, Time(s/epoch):0.1300
+0.5429394841194153 0.5148058533668518 0.5522938370704651
+Loss_clf:0.547 | Loss_dist:0.036 | Loss_kl:0.009
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 029, Loss:0.5832 Train: 0.6872, Val:0.6160, Test: 0.6400, Time(s/epoch):0.1246
+0.5477574467658997 0.5364854335784912 0.5568247437477112
+Loss_clf:0.556 | Loss_dist:0.035 | Loss_kl:0.008
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 030, Loss:0.5907 Train: 0.7018, Val:0.6560, Test: 0.7440, Time(s/epoch):0.1391
+0.534659743309021 0.5234911441802979 0.5372987389564514
+Loss_clf:0.542 | Loss_dist:0.034 | Loss_kl:0.010
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 031, Loss:0.5764 Train: 0.7028, Val:0.6720, Test: 0.7040, Time(s/epoch):0.1433
+0.526520848274231 0.5158383250236511 0.533811092376709
+Loss_clf:0.534 | Loss_dist:0.033 | Loss_kl:0.008
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 032, Loss:0.5670 Train: 0.7153, Val:0.6560, Test: 0.8000, Time(s/epoch):0.1428
+0.5143203735351562 0.52182936668396 0.5257411599159241
+Loss_clf:0.529 | Loss_dist:0.033 | Loss_kl:0.010
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 033, Loss:0.5617 Train: 0.7320, Val:0.6640, Test: 0.7840, Time(s/epoch):0.1426
+0.5120622515678406 0.5118736624717712 0.4997430145740509
+Loss_clf:0.519 | Loss_dist:0.031 | Loss_kl:0.010
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 034, Loss:0.5502 Train: 0.7164, Val:0.6400, Test: 0.6880, Time(s/epoch):0.1449
+0.4843907654285431 0.4689015746116638 0.470413476228714
+Loss_clf:0.485 | Loss_dist:0.028 | Loss_kl:0.008
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 035, Loss:0.5122 Train: 0.7195, Val:0.6080, Test: 0.6240, Time(s/epoch):0.1421
+0.5367244482040405 0.48856088519096375 0.5198512077331543
+Loss_clf:0.532 | Loss_dist:0.027 | Loss_kl:0.012
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 036, Loss:0.5588 Train: 0.7862, Val:0.7040, Test: 0.8720, Time(s/epoch):0.1428
+0.49033498764038086 0.48096945881843567 0.47106558084487915
+Loss_clf:0.492 | Loss_dist:0.026 | Loss_kl:0.009
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 037, Loss:0.5184 Train: 0.8071, Val:0.7840, Test: 0.8880, Time(s/epoch):0.1435
+0.49209240078926086 0.46326473355293274 0.48051244020462036
+Loss_clf:0.491 | Loss_dist:0.025 | Loss_kl:0.009
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 038, Loss:0.5166 Train: 0.8248, Val:0.8000, Test: 0.8960, Time(s/epoch):0.1428
+0.4513351321220398 0.4196264147758484 0.42856737971305847
+Loss_clf:0.449 | Loss_dist:0.022 | Loss_kl:0.011
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 039, Loss:0.4701 Train: 0.7247, Val:0.7440, Test: 0.8720, Time(s/epoch):0.1424
+0.48836785554885864 0.420178085565567 0.41861236095428467
+Loss_clf:0.464 | Loss_dist:0.020 | Loss_kl:0.010
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 040, Loss:0.4841 Train: 0.7967, Val:0.7920, Test: 0.8640, Time(s/epoch):0.1404
+0.44469770789146423 0.407797634601593 0.3977115750312805
+Loss_clf:0.436 | Loss_dist:0.020 | Loss_kl:0.013
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 041, Loss:0.4560 Train: 0.8363, Val:0.7600, Test: 0.8720, Time(s/epoch):0.1422
+0.4497781991958618 0.4181654155254364 0.4208492636680603
+Loss_clf:0.444 | Loss_dist:0.021 | Loss_kl:0.010
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 042, Loss:0.4651 Train: 0.8478, Val:0.8080, Test: 0.8720, Time(s/epoch):0.1433
+0.43050315976142883 0.3821406662464142 0.4064677357673645
+Loss_clf:0.426 | Loss_dist:0.020 | Loss_kl:0.014
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 043, Loss:0.4462 Train: 0.8551, Val:0.8160, Test: 0.8960, Time(s/epoch):0.1430
+0.41562995314598083 0.3724418878555298 0.37171971797943115
+Loss_clf:0.406 | Loss_dist:0.018 | Loss_kl:0.012
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 044, Loss:0.4238 Train: 0.8530, Val:0.8320, Test: 0.8960, Time(s/epoch):0.1414
+0.39402124285697937 0.3520396053791046 0.33800166845321655
+Loss_clf:0.382 | Loss_dist:0.015 | Loss_kl:0.012
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 045, Loss:0.3968 Train: 0.8394, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1409
+0.39473631978034973 0.3497980833053589 0.35105597972869873
+Loss_clf:0.384 | Loss_dist:0.014 | Loss_kl:0.011
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 046, Loss:0.3980 Train: 0.8352, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1415
+0.37114161252975464 0.3256921172142029 0.3241101801395416
+Loss_clf:0.359 | Loss_dist:0.012 | Loss_kl:0.011
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 047, Loss:0.3705 Train: 0.8467, Val:0.8400, Test: 0.8800, Time(s/epoch):0.1426
+0.3626188039779663 0.31474870443344116 0.30968159437179565
+Loss_clf:0.352 | Loss_dist:0.009 | Loss_kl:0.015
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 048, Loss:0.3615 Train: 0.8759, Val:0.8480, Test: 0.8880, Time(s/epoch):0.1418
+0.3555985391139984 0.3271017074584961 0.3160075545310974
+Loss_clf:0.353 | Loss_dist:0.009 | Loss_kl:0.014
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 049, Loss:0.3620 Train: 0.8874, Val:0.8320, Test: 0.8640, Time(s/epoch):0.1462
+0.35125061869621277 0.3146323561668396 0.30257368087768555
+Loss_clf:0.343 | Loss_dist:0.010 | Loss_kl:0.013
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 050, Loss:0.3520 Train: 0.8843, Val:0.8400, Test: 0.8640, Time(s/epoch):0.1412
+0.3151373863220215 0.28079360723495483 0.27534350752830505
+Loss_clf:0.311 | Loss_dist:0.008 | Loss_kl:0.014
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 051, Loss:0.3190 Train: 0.8624, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1421
+0.29657599329948425 0.2857916057109833 0.2663681209087372
+Loss_clf:0.299 | Loss_dist:0.007 | Loss_kl:0.012
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 052, Loss:0.3055 Train: 0.8415, Val:0.8160, Test: 0.8720, Time(s/epoch):0.1402
+0.3053031861782074 0.2966402769088745 0.2828308939933777
+Loss_clf:0.312 | Loss_dist:0.006 | Loss_kl:0.014
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 053, Loss:0.3180 Train: 0.8822, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1448
+0.29393213987350464 0.2740076780319214 0.2696591317653656
+Loss_clf:0.293 | Loss_dist:0.007 | Loss_kl:0.010
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 054, Loss:0.2994 Train: 0.9114, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1407
+0.27751344442367554 0.2853381633758545 0.28762057423591614
+Loss_clf:0.294 | Loss_dist:0.008 | Loss_kl:0.012
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 055, Loss:0.3019 Train: 0.9197, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1423
+0.2630942165851593 0.26663798093795776 0.2656797170639038
+Loss_clf:0.276 | Loss_dist:0.007 | Loss_kl:0.011
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 056, Loss:0.2830 Train: 0.9208, Val:0.8400, Test: 0.8960, Time(s/epoch):0.1495
+0.2566419839859009 0.2636733949184418 0.2562101483345032
+Loss_clf:0.268 | Loss_dist:0.006 | Loss_kl:0.009
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 057, Loss:0.2735 Train: 0.8968, Val:0.8400, Test: 0.8880, Time(s/epoch):0.1505
+0.23681892454624176 0.26318731904029846 0.25059106945991516
+Loss_clf:0.259 | Loss_dist:0.005 | Loss_kl:0.013
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 058, Loss:0.2642 Train: 0.8884, Val:0.8400, Test: 0.8800, Time(s/epoch):0.1346
+0.23095165193080902 0.24914003908634186 0.23985499143600464
+Loss_clf:0.249 | Loss_dist:0.005 | Loss_kl:0.011
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 059, Loss:0.2539 Train: 0.8947, Val:0.8400, Test: 0.8800, Time(s/epoch):0.1444
+0.2264563888311386 0.2477528601884842 0.24906226992607117
+Loss_clf:0.249 | Loss_dist:0.005 | Loss_kl:0.011
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 060, Loss:0.2540 Train: 0.8905, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1539
+0.21119605004787445 0.25591930747032166 0.2557799220085144
+Loss_clf:0.244 | Loss_dist:0.005 | Loss_kl:0.010
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 061, Loss:0.2487 Train: 0.8999, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1554
+0.2200472354888916 0.2618856132030487 0.2608378827571869
+Loss_clf:0.251 | Loss_dist:0.004 | Loss_kl:0.010
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 062, Loss:0.2548 Train: 0.9114, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1516
+0.20612390339374542 0.2601211667060852 0.2554165720939636
+Loss_clf:0.241 | Loss_dist:0.004 | Loss_kl:0.009
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 063, Loss:0.2443 Train: 0.9270, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1533
+0.19896160066127777 0.24523571133613586 0.24178485572338104
+Loss_clf:0.230 | Loss_dist:0.003 | Loss_kl:0.008
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 064, Loss:0.2329 Train: 0.9322, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1541
+0.19206523895263672 0.22426840662956238 0.2239883840084076
+Loss_clf:0.218 | Loss_dist:0.003 | Loss_kl:0.010
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 065, Loss:0.2214 Train: 0.9291, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1515
+0.20500914752483368 0.2390991747379303 0.25196146965026855
+Loss_clf:0.233 | Loss_dist:0.003 | Loss_kl:0.008
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 066, Loss:0.2366 Train: 0.9051, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1493
+0.1833963841199875 0.24099303781986237 0.2474396675825119
+Loss_clf:0.223 | Loss_dist:0.003 | Loss_kl:0.009
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 067, Loss:0.2266 Train: 0.9197, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1523
+0.19527244567871094 0.24054759740829468 0.2539195418357849
+Loss_clf:0.230 | Loss_dist:0.004 | Loss_kl:0.009
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 068, Loss:0.2337 Train: 0.9489, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1543
+0.19157615303993225 0.23011966049671173 0.23740553855895996
+Loss_clf:0.221 | Loss_dist:0.005 | Loss_kl:0.008
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 069, Loss:0.2256 Train: 0.9176, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1528
+0.1882367730140686 0.22446224093437195 0.23385462164878845
+Loss_clf:0.215 | Loss_dist:0.003 | Loss_kl:0.007
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 070, Loss:0.2186 Train: 0.9281, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1410
+0.18574868142604828 0.23473840951919556 0.23908889293670654
+Loss_clf:0.217 | Loss_dist:0.003 | Loss_kl:0.006
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 071, Loss:0.2201 Train: 0.9510, Val:0.8400, Test: 0.8800, Time(s/epoch):0.1458
+0.1935967057943344 0.22925075888633728 0.2340293824672699
+Loss_clf:0.220 | Loss_dist:0.003 | Loss_kl:0.007
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 072, Loss:0.2232 Train: 0.9541, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1425
+0.17114976048469543 0.225017249584198 0.23787261545658112
+Loss_clf:0.209 | Loss_dist:0.003 | Loss_kl:0.008
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 073, Loss:0.2120 Train: 0.9353, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1417
+0.17322665452957153 0.21370621025562286 0.2153126299381256
+Loss_clf:0.202 | Loss_dist:0.003 | Loss_kl:0.008
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 074, Loss:0.2045 Train: 0.9406, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1430
+0.1641976237297058 0.2091214656829834 0.21160979568958282
+Loss_clf:0.193 | Loss_dist:0.003 | Loss_kl:0.006
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 075, Loss:0.1955 Train: 0.9499, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1458
+0.16851285099983215 0.21275641024112701 0.21151481568813324
+Loss_clf:0.196 | Loss_dist:0.002 | Loss_kl:0.006
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 076, Loss:0.1982 Train: 0.9406, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1444
+0.17512626945972443 0.21589747071266174 0.21792028844356537
+Loss_clf:0.202 | Loss_dist:0.002 | Loss_kl:0.006
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 077, Loss:0.2044 Train: 0.9082, Val:0.8240, Test: 0.8800, Time(s/epoch):0.1405
+0.181287482380867 0.22509148716926575 0.22252291440963745
+Loss_clf:0.207 | Loss_dist:0.002 | Loss_kl:0.005
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 078, Loss:0.2092 Train: 0.9604, Val:0.8320, Test: 0.8960, Time(s/epoch):0.1388
+0.16865596175193787 0.22750051319599152 0.22757993638515472
+Loss_clf:0.204 | Loss_dist:0.002 | Loss_kl:0.006
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 079, Loss:0.2058 Train: 0.9531, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1424
+0.1785922795534134 0.22980622947216034 0.2357722669839859
+Loss_clf:0.212 | Loss_dist:0.002 | Loss_kl:0.006
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 080, Loss:0.2136 Train: 0.9291, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1439
+0.1736784130334854 0.2198825180530548 0.21760882437229156
+Loss_clf:0.201 | Loss_dist:0.001 | Loss_kl:0.005
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 081, Loss:0.2029 Train: 0.9458, Val:0.8400, Test: 0.8800, Time(s/epoch):0.1461
+0.1682688146829605 0.20547343790531158 0.2079608291387558
+Loss_clf:0.192 | Loss_dist:0.001 | Loss_kl:0.005
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 082, Loss:0.1937 Train: 0.9572, Val:0.8400, Test: 0.8800, Time(s/epoch):0.1433
+0.17219193279743195 0.21994604170322418 0.21124231815338135
+Loss_clf:0.200 | Loss_dist:0.002 | Loss_kl:0.006
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 083, Loss:0.2021 Train: 0.9531, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1446
+0.1638517826795578 0.21342022716999054 0.2187846302986145
+Loss_clf:0.195 | Loss_dist:0.002 | Loss_kl:0.005
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 084, Loss:0.1966 Train: 0.9218, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1436
+0.16807617247104645 0.20135758817195892 0.20449891686439514
+Loss_clf:0.191 | Loss_dist:0.002 | Loss_kl:0.006
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 085, Loss:0.1928 Train: 0.9552, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1416
+0.16862252354621887 0.2044602632522583 0.20491009950637817
+Loss_clf:0.191 | Loss_dist:0.002 | Loss_kl:0.005
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 086, Loss:0.1931 Train: 0.9572, Val:0.8400, Test: 0.8800, Time(s/epoch):0.1383
+0.15816433727741241 0.23158611357212067 0.22268345952033997
+Loss_clf:0.197 | Loss_dist:0.002 | Loss_kl:0.005
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 087, Loss:0.1990 Train: 0.9176, Val:0.8320, Test: 0.8800, Time(s/epoch):0.1367
+0.1639098823070526 0.21579155325889587 0.22050030529499054
+Loss_clf:0.195 | Loss_dist:0.002 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 088, Loss:0.1962 Train: 0.9479, Val:0.8400, Test: 0.8880, Time(s/epoch):0.1403
+0.14601995050907135 0.2105034589767456 0.20899438858032227
+Loss_clf:0.183 | Loss_dist:0.002 | Loss_kl:0.005
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 089, Loss:0.1842 Train: 0.9604, Val:0.8320, Test: 0.8960, Time(s/epoch):0.1432
+0.15383346378803253 0.20350858569145203 0.204147070646286
+Loss_clf:0.183 | Loss_dist:0.002 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 090, Loss:0.1842 Train: 0.9562, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1415
+0.16306062042713165 0.22114841639995575 0.21956069767475128
+Loss_clf:0.196 | Loss_dist:0.001 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 091, Loss:0.1970 Train: 0.9239, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1428
+0.15242929756641388 0.22238998115062714 0.22378814220428467
+Loss_clf:0.193 | Loss_dist:0.001 | Loss_kl:0.006
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 092, Loss:0.1948 Train: 0.9552, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1359
+0.16063635051250458 0.21959714591503143 0.2193288654088974
+Loss_clf:0.194 | Loss_dist:0.001 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 093, Loss:0.1949 Train: 0.9541, Val:0.8400, Test: 0.8960, Time(s/epoch):0.1394
+0.15315057337284088 0.2070271372795105 0.20888420939445496
+Loss_clf:0.184 | Loss_dist:0.001 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 094, Loss:0.1850 Train: 0.9406, Val:0.8480, Test: 0.8880, Time(s/epoch):0.1310
+0.15635213255882263 0.20145711302757263 0.2005770206451416
+Loss_clf:0.182 | Loss_dist:0.001 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 095, Loss:0.1833 Train: 0.9228, Val:0.8480, Test: 0.8880, Time(s/epoch):0.1384
+0.1559768170118332 0.20477698743343353 0.2114129513502121
+Loss_clf:0.185 | Loss_dist:0.001 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 096, Loss:0.1864 Train: 0.9625, Val:0.8400, Test: 0.8800, Time(s/epoch):0.1399
+0.15785609185695648 0.21137557923793793 0.21166366338729858
+Loss_clf:0.188 | Loss_dist:0.001 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 097, Loss:0.1893 Train: 0.9531, Val:0.8400, Test: 0.8880, Time(s/epoch):0.1434
+0.14689971506595612 0.20481987297534943 0.20076622068881989
+Loss_clf:0.179 | Loss_dist:0.001 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 098, Loss:0.1798 Train: 0.9625, Val:0.8400, Test: 0.8800, Time(s/epoch):0.1436
+0.14811553061008453 0.2160346806049347 0.21512369811534882
+Loss_clf:0.186 | Loss_dist:0.001 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 099, Loss:0.1870 Train: 0.9593, Val:0.8480, Test: 0.8800, Time(s/epoch):0.1430
+0.14303001761436462 0.20350295305252075 0.202810138463974
+Loss_clf:0.176 | Loss_dist:0.001 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 100, Loss:0.1776 Train: 0.9531, Val:0.8400, Test: 0.8880, Time(s/epoch):0.1416
+0.14864245057106018 0.20662233233451843 0.2084614634513855
+Loss_clf:0.181 | Loss_dist:0.001 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 101, Loss:0.1824 Train: 0.9562, Val:0.8400, Test: 0.8880, Time(s/epoch):0.1429
+0.16046713292598724 0.21713045239448547 0.21504679322242737
+Loss_clf:0.191 | Loss_dist:0.001 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 102, Loss:0.1921 Train: 0.9604, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1423
+0.14719370007514954 0.20575223863124847 0.20585814118385315
+Loss_clf:0.180 | Loss_dist:0.001 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 103, Loss:0.1807 Train: 0.9604, Val:0.8320, Test: 0.8960, Time(s/epoch):0.1435
+0.13923713564872742 0.19738996028900146 0.19906845688819885
+Loss_clf:0.172 | Loss_dist:0.001 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 104, Loss:0.1727 Train: 0.9635, Val:0.8320, Test: 0.8960, Time(s/epoch):0.1414
+0.14942409098148346 0.21127785742282867 0.20879454910755157
+Loss_clf:0.183 | Loss_dist:0.001 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 105, Loss:0.1840 Train: 0.9645, Val:0.8320, Test: 0.8960, Time(s/epoch):0.1430
+0.15008993446826935 0.20966725051403046 0.20845499634742737
+Loss_clf:0.183 | Loss_dist:0.001 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 106, Loss:0.1837 Train: 0.9635, Val:0.8320, Test: 0.8960, Time(s/epoch):0.1417
+0.13439513742923737 0.19678479433059692 0.19768354296684265
+Loss_clf:0.169 | Loss_dist:0.001 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 107, Loss:0.1699 Train: 0.9635, Val:0.8320, Test: 0.8960, Time(s/epoch):0.1442
+0.13890109956264496 0.21077340841293335 0.212704598903656
+Loss_clf:0.179 | Loss_dist:0.001 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 108, Loss:0.1796 Train: 0.9625, Val:0.8320, Test: 0.8960, Time(s/epoch):0.1419
+0.15845035016536713 0.20468401908874512 0.20195406675338745
+Loss_clf:0.184 | Loss_dist:0.001 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 109, Loss:0.1850 Train: 0.9614, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1429
+0.1402367502450943 0.21014711260795593 0.20873728394508362
+Loss_clf:0.179 | Loss_dist:0.001 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 110, Loss:0.1791 Train: 0.9583, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1418
+0.14283254742622375 0.21627674996852875 0.21669693291187286
+Loss_clf:0.183 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 111, Loss:0.1838 Train: 0.9562, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1379
+0.14586061239242554 0.21317844092845917 0.20665082335472107
+Loss_clf:0.181 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 112, Loss:0.1818 Train: 0.9541, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1412
+0.1363031417131424 0.2076708823442459 0.20761369168758392
+Loss_clf:0.175 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 113, Loss:0.1757 Train: 0.9562, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1483
+0.14567816257476807 0.19861829280853271 0.20113283395767212
+Loss_clf:0.176 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 114, Loss:0.1765 Train: 0.9604, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1462
+0.14638200402259827 0.21143768727779388 0.21171975135803223
+Loss_clf:0.183 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 115, Loss:0.1830 Train: 0.9645, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1422
+0.13714316487312317 0.20122751593589783 0.20351912081241608
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 116, Loss:0.1734 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1403
+0.13963694870471954 0.20589394867420197 0.21165114641189575
+Loss_clf:0.178 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 117, Loss:0.1781 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1429
+0.14557786285877228 0.19907458126544952 0.203183114528656
+Loss_clf:0.176 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 118, Loss:0.1767 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1430
+0.143533855676651 0.1995205581188202 0.2023453265428543
+Loss_clf:0.176 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 119, Loss:0.1760 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1417
+0.13637293875217438 0.20219171047210693 0.19995874166488647
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 120, Loss:0.1725 Train: 0.9635, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1448
+0.1517428308725357 0.2117977887392044 0.20703928172588348
+Loss_clf:0.184 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 121, Loss:0.1842 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1425
+0.13285210728645325 0.20605695247650146 0.20516963303089142
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 122, Loss:0.1726 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1435
+0.13939383625984192 0.19891300797462463 0.20431013405323029
+Loss_clf:0.174 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 123, Loss:0.1739 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1431
+0.13084609806537628 0.200080007314682 0.20135755836963654
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 124, Loss:0.1696 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1462
+0.14227674901485443 0.2082381695508957 0.20762120187282562
+Loss_clf:0.178 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 125, Loss:0.1787 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1434
+0.13432835042476654 0.20468585193157196 0.20531217753887177
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 126, Loss:0.1734 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1441
+0.13940158486366272 0.20068323612213135 0.19967259466648102
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 127, Loss:0.1734 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1398
+0.13355451822280884 0.20605817437171936 0.2068600356578827
+Loss_clf:0.174 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 128, Loss:0.1738 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1399
+0.14873532950878143 0.21947093307971954 0.21790653467178345
+Loss_clf:0.187 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 129, Loss:0.1868 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1433
+0.14640583097934723 0.19650901854038239 0.19989152252674103
+Loss_clf:0.176 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 130, Loss:0.1765 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1438
+0.1387667953968048 0.19996610283851624 0.2025555968284607
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 131, Loss:0.1735 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1448
+0.14325475692749023 0.20062248408794403 0.19832850992679596
+Loss_clf:0.175 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 132, Loss:0.1752 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1424
+0.14314910769462585 0.19491387903690338 0.1940171718597412
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 133, Loss:0.1726 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1438
+0.13581278920173645 0.20040273666381836 0.20085866749286652
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 134, Loss:0.1716 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1435
+0.1484522670507431 0.20992425084114075 0.20803731679916382
+Loss_clf:0.182 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 135, Loss:0.1825 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1411
+0.13257567584514618 0.1963507980108261 0.19445157051086426
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 136, Loss:0.1671 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1353
+0.13458435237407684 0.19523169100284576 0.19360224902629852
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 137, Loss:0.1680 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1457
+0.135409414768219 0.21356742084026337 0.21315601468086243
+Loss_clf:0.178 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 138, Loss:0.1781 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1415
+0.1379893273115158 0.20324745774269104 0.20106182992458344
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 139, Loss:0.1736 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1410
+0.13512997329235077 0.21069756150245667 0.21140721440315247
+Loss_clf:0.176 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 140, Loss:0.1766 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1408
+0.13792328536510468 0.19967703521251678 0.19581285119056702
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 141, Loss:0.1714 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1418
+0.14165957272052765 0.19499652087688446 0.19684314727783203
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 142, Loss:0.1721 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1430
+0.14102618396282196 0.20034709572792053 0.1988697350025177
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 143, Loss:0.1737 Train: 0.9635, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1407
+0.14149555563926697 0.19572614133358002 0.19718259572982788
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 144, Loss:0.1728 Train: 0.9635, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1282
+0.14131607115268707 0.19932128489017487 0.20028354227542877
+Loss_clf:0.174 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 145, Loss:0.1740 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1373
+0.1421421319246292 0.2144959717988968 0.21631115674972534
+Loss_clf:0.182 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 146, Loss:0.1824 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1411
+0.1368248164653778 0.2024163156747818 0.20276284217834473
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 147, Loss:0.1733 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1415
+0.1432981640100479 0.19618618488311768 0.1976023018360138
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 148, Loss:0.1732 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1405
+0.13382446765899658 0.20321735739707947 0.2063809484243393
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 149, Loss:0.1726 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1443
+0.13404963910579681 0.20095910131931305 0.20408044755458832
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 150, Loss:0.1719 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1368
+0.13424140214920044 0.18411785364151 0.18525774776935577
+Loss_clf:0.163 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 151, Loss:0.1629 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1441
+0.1404973417520523 0.20235028862953186 0.20237132906913757
+Loss_clf:0.175 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 152, Loss:0.1751 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1428
+0.1367153376340866 0.19499240815639496 0.2002287358045578
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 153, Loss:0.1705 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1293
+0.13898296654224396 0.2074849009513855 0.20775149762630463
+Loss_clf:0.177 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 154, Loss:0.1772 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1398
+0.1422252357006073 0.21457843482494354 0.21492773294448853
+Loss_clf:0.182 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 155, Loss:0.1823 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1437
+0.14143610000610352 0.2134753167629242 0.210158571600914
+Loss_clf:0.180 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 156, Loss:0.1800 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1425
+0.13641630113124847 0.19655197858810425 0.20527434349060059
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 157, Loss:0.1725 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1435
+0.1360190510749817 0.1953819990158081 0.19856029748916626
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 158, Loss:0.1699 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1427
+0.13743139803409576 0.21631404757499695 0.21421284973621368
+Loss_clf:0.179 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 159, Loss:0.1796 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1470
+0.13957346975803375 0.20171374082565308 0.20171897113323212
+Loss_clf:0.174 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 160, Loss:0.1740 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1438
+0.14199842512607574 0.2163512259721756 0.2164444923400879
+Loss_clf:0.182 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 161, Loss:0.1823 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1367
+0.13544484972953796 0.19867581129074097 0.20152823626995087
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 162, Loss:0.1712 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1391
+0.1376098394393921 0.19612498581409454 0.2008921504020691
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 163, Loss:0.1712 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1418
+0.14528250694274902 0.20052598416805267 0.2013649344444275
+Loss_clf:0.176 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 164, Loss:0.1766 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1456
+0.13520869612693787 0.19680115580558777 0.20091642439365387
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 165, Loss:0.1706 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1429
+0.13320469856262207 0.20593522489070892 0.20686548948287964
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 166, Loss:0.1730 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1426
+0.1327604353427887 0.19926588237285614 0.19917325675487518
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 167, Loss:0.1693 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1415
+0.139634907245636 0.21063724160194397 0.2088390588760376
+Loss_clf:0.178 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 168, Loss:0.1785 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1399
+0.13687366247177124 0.21473290026187897 0.21539737284183502
+Loss_clf:0.179 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 169, Loss:0.1792 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1286
+0.13744297623634338 0.20695553719997406 0.2090975046157837
+Loss_clf:0.176 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 170, Loss:0.1764 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1396
+0.13896994292736053 0.21083270013332367 0.20791639387607574
+Loss_clf:0.177 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 171, Loss:0.1776 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1415
+0.13687877357006073 0.19086213409900665 0.19560907781124115
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 172, Loss:0.1682 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1440
+0.13688229024410248 0.20467187464237213 0.2035350352525711
+Loss_clf:0.174 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 173, Loss:0.1738 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1327
+0.13719019293785095 0.21331597864627838 0.21188393235206604
+Loss_clf:0.178 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 174, Loss:0.1784 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1419
+0.1421155333518982 0.20192575454711914 0.2002071589231491
+Loss_clf:0.175 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 175, Loss:0.1751 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1402
+0.134841188788414 0.19970251619815826 0.20028087496757507
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 176, Loss:0.1708 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1284
+0.13119129836559296 0.20016178488731384 0.19773080945014954
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 177, Loss:0.1684 Train: 0.9645, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1394
+0.1366472840309143 0.19627293944358826 0.1976650208234787
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 178, Loss:0.1702 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1340
+0.136074498295784 0.20206333696842194 0.2072126269340515
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 179, Loss:0.1736 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1414
+0.12967129051685333 0.20051735639572144 0.20056653022766113
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 180, Loss:0.1688 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1423
+0.14636322855949402 0.21002891659736633 0.21226803958415985
+Loss_clf:0.182 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 181, Loss:0.1821 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1481
+0.14488886296749115 0.1978040486574173 0.19737432897090912
+Loss_clf:0.174 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 182, Loss:0.1743 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1441
+0.13458600640296936 0.20334191620349884 0.19820831716060638
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 183, Loss:0.1709 Train: 0.9666, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1455
+0.1393192559480667 0.20795254409313202 0.2066490799188614
+Loss_clf:0.177 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 184, Loss:0.1770 Train: 0.9614, Val:0.8400, Test: 0.8880, Time(s/epoch):0.1473
+0.13684001564979553 0.20705750584602356 0.20288212597370148
+Loss_clf:0.174 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 185, Loss:0.1743 Train: 0.9635, Val:0.8400, Test: 0.8880, Time(s/epoch):0.1426
+0.12667545676231384 0.20220905542373657 0.20369140803813934
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 186, Loss:0.1681 Train: 0.9666, Val:0.8320, Test: 0.8880, Time(s/epoch):0.1389
+0.13530798256397247 0.20196236670017242 0.2055896520614624
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 187, Loss:0.1729 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1424
+0.14127619564533234 0.20251303911209106 0.20493094623088837
+Loss_clf:0.176 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 188, Loss:0.1760 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1433
+0.12979164719581604 0.20438358187675476 0.2018996775150299
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 189, Loss:0.1696 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1407
+0.1259421557188034 0.2001946121454239 0.20353418588638306
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 190, Loss:0.1670 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1404
+0.1364433914422989 0.1989252269268036 0.20015636086463928
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 191, Loss:0.1715 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1435
+0.13338150084018707 0.20552055537700653 0.20226800441741943
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 192, Loss:0.1719 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1401
+0.13508495688438416 0.20048892498016357 0.20250341296195984
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 193, Loss:0.1712 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1382
+0.13433077931404114 0.19104386866092682 0.19696050882339478
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 194, Loss:0.1680 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1423
+0.13984838128089905 0.22209951281547546 0.22148537635803223
+Loss_clf:0.184 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 195, Loss:0.1839 Train: 0.9677, Val:0.8240, Test: 0.8960, Time(s/epoch):0.1426
+0.1258338838815689 0.19157466292381287 0.19365060329437256
+Loss_clf:0.162 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 196, Loss:0.1626 Train: 0.9677, Val:0.8240, Test: 0.8960, Time(s/epoch):0.1406
+0.14351382851600647 0.20159703493118286 0.2050563097000122
+Loss_clf:0.177 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 197, Loss:0.1767 Train: 0.9677, Val:0.8240, Test: 0.8960, Time(s/epoch):0.1446
+0.13778503239154816 0.2140461951494217 0.20690643787384033
+Loss_clf:0.178 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 198, Loss:0.1780 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1290
+0.1311582326889038 0.19766366481781006 0.1994762122631073
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-04.
+Epoch: 199, Loss:0.1682 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1417
+0.13244590163230896 0.20226414501667023 0.20262642204761505
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 200, Loss:0.1706 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1351
+0.12920886278152466 0.19231325387954712 0.19184163212776184
+Loss_clf:0.164 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 201, Loss:0.1639 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1420
+0.1400008648633957 0.1919739693403244 0.19241656363010406
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 202, Loss:0.1692 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1398
+0.13983756303787231 0.20238803327083588 0.19789773225784302
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 203, Loss:0.1735 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1414
+0.13682201504707336 0.2172182947397232 0.21590600907802582
+Loss_clf:0.180 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 204, Loss:0.1800 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1377
+0.13863271474838257 0.21331296861171722 0.21163377165794373
+Loss_clf:0.179 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 205, Loss:0.1794 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1409
+0.1278628408908844 0.1954958289861679 0.19721773266792297
+Loss_clf:0.165 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 206, Loss:0.1654 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1424
+0.13556817173957825 0.19765904545783997 0.20358189940452576
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 207, Loss:0.1716 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1417
+0.12956386804580688 0.1991472840309143 0.20159828662872314
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 208, Loss:0.1678 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1423
+0.13309337198734283 0.19503939151763916 0.19977319240570068
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 209, Loss:0.1688 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1414
+0.1346433460712433 0.21590162813663483 0.21130535006523132
+Loss_clf:0.177 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 210, Loss:0.1776 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1297
+0.13602396845817566 0.19851075112819672 0.19651758670806885
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 211, Loss:0.1701 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1396
+0.12894165515899658 0.20100203156471252 0.19740375876426697
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 212, Loss:0.1670 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1582
+0.13061058521270752 0.20014169812202454 0.19818353652954102
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 213, Loss:0.1682 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1543
+0.13231223821640015 0.19685868918895721 0.19925443828105927
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 214, Loss:0.1685 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1539
+0.13146375119686127 0.20687837898731232 0.20776431262493134
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 215, Loss:0.1725 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1549
+0.1332874894142151 0.20297914743423462 0.2024012804031372
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 216, Loss:0.1710 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1534
+0.13532882928848267 0.20221461355686188 0.19951395690441132
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 217, Loss:0.1712 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1538
+0.13340377807617188 0.20084848999977112 0.1986456960439682
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 218, Loss:0.1695 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1510
+0.1389588713645935 0.20574305951595306 0.20573967695236206
+Loss_clf:0.176 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 219, Loss:0.1757 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1547
+0.1281987726688385 0.19653689861297607 0.19495368003845215
+Loss_clf:0.165 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 220, Loss:0.1652 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1359
+0.1321137547492981 0.20150244235992432 0.20116204023361206
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 221, Loss:0.1698 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1413
+0.14220313727855682 0.20505346357822418 0.2078479379415512
+Loss_clf:0.177 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 222, Loss:0.1776 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1404
+0.13136804103851318 0.19847433269023895 0.20034225285053253
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 223, Loss:0.1686 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1442
+0.136452779173851 0.19043926894664764 0.19549287855625153
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 224, Loss:0.1678 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1411
+0.13902869820594788 0.19706669449806213 0.20060057938098907
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 225, Loss:0.1724 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1419
+0.13494257628917694 0.19511663913726807 0.19700554013252258
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 226, Loss:0.1686 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1470
+0.13253238797187805 0.18430756032466888 0.19164332747459412
+Loss_clf:0.163 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 227, Loss:0.1636 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1428
+0.12972988188266754 0.1963443011045456 0.20059049129486084
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 228, Loss:0.1670 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1433
+0.13390032947063446 0.20544873178005219 0.20062211155891418
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 229, Loss:0.1717 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1439
+0.14376157522201538 0.1937626600265503 0.1964046061038971
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 230, Loss:0.1727 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1407
+0.13047021627426147 0.19683067500591278 0.19798874855041504
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 231, Loss:0.1669 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1443
+0.1407349705696106 0.2083696573972702 0.20692779123783112
+Loss_clf:0.177 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 232, Loss:0.1770 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1427
+0.13417689502239227 0.19322820007801056 0.19550065696239471
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 233, Loss:0.1673 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1426
+0.1333433985710144 0.20129230618476868 0.19830407202243805
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 234, Loss:0.1696 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1388
+0.1352131962776184 0.19889505207538605 0.19754740595817566
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 235, Loss:0.1702 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1375
+0.130415678024292 0.2027728110551834 0.20369943976402283
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 236, Loss:0.1709 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1372
+0.13836687803268433 0.19864898920059204 0.2067948579788208
+Loss_clf:0.174 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 237, Loss:0.1741 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1258
+0.13477149605751038 0.19654765725135803 0.19814500212669373
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 238, Loss:0.1698 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1393
+0.1280830204486847 0.19682727754116058 0.19825004041194916
+Loss_clf:0.166 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 239, Loss:0.1659 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1423
+0.13328200578689575 0.19450914859771729 0.19686701893806458
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 240, Loss:0.1679 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1423
+0.1356172114610672 0.19576957821846008 0.19982561469078064
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 241, Loss:0.1699 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1428
+0.12395505607128143 0.19970081746578217 0.20048242807388306
+Loss_clf:0.165 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 242, Loss:0.1656 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1417
+0.13386423885822296 0.19261886179447174 0.19715261459350586
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 243, Loss:0.1675 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1432
+0.1392742097377777 0.21005016565322876 0.20900121331214905
+Loss_clf:0.177 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 244, Loss:0.1776 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1432
+0.13062188029289246 0.20045743882656097 0.20203253626823425
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 245, Loss:0.1690 Train: 0.9687, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1423
+0.13960476219654083 0.20081518590450287 0.19991537928581238
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 246, Loss:0.1729 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1429
+0.12832072377204895 0.20453940331935883 0.20419646799564362
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 247, Loss:0.1695 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1423
+0.14201630651950836 0.19645880162715912 0.19567716121673584
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 248, Loss:0.1722 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1431
+0.13524042069911957 0.19894710183143616 0.19860920310020447
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 249, Loss:0.1699 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1413
+0.13593468070030212 0.2027139961719513 0.20244193077087402
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 250, Loss:0.1720 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1425
+0.13397610187530518 0.19938956201076508 0.20057883858680725
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 251, Loss:0.1702 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1430
+0.13747653365135193 0.20867612957954407 0.20531143248081207
+Loss_clf:0.175 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 252, Loss:0.1753 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1385
+0.14177659153938293 0.20227821171283722 0.20139020681381226
+Loss_clf:0.175 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 253, Loss:0.1752 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1413
+0.134912371635437 0.1902749240398407 0.19053229689598083
+Loss_clf:0.166 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 254, Loss:0.1657 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1398
+0.13215263187885284 0.20077134668827057 0.20005221664905548
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 255, Loss:0.1693 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1381
+0.13477076590061188 0.2006131112575531 0.2012980431318283
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 256, Loss:0.1710 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1407
+0.13685695827007294 0.19021078944206238 0.19211053848266602
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 257, Loss:0.1671 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1427
+0.13778850436210632 0.19838880002498627 0.19982704520225525
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 258, Loss:0.1717 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1426
+0.12955635786056519 0.197669118642807 0.1963827759027481
+Loss_clf:0.166 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 259, Loss:0.1662 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1431
+0.13144202530384064 0.1941443532705307 0.19381900131702423
+Loss_clf:0.166 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 260, Loss:0.1661 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1451
+0.12982220947742462 0.2020305097103119 0.20323507487773895
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 261, Loss:0.1694 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1422
+0.12492844462394714 0.20465900003910065 0.20590928196907043
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 262, Loss:0.1684 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1397
+0.13524875044822693 0.20315293967723846 0.20176087319850922
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 263, Loss:0.1720 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1426
+0.1342921406030655 0.21164368093013763 0.2106654793024063
+Loss_clf:0.176 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 264, Loss:0.1762 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1426
+0.1433240920305252 0.20126119256019592 0.20547370612621307
+Loss_clf:0.177 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 265, Loss:0.1767 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1444
+0.13561207056045532 0.20157356560230255 0.2011813372373581
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 266, Loss:0.1716 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1423
+0.13333851099014282 0.20888638496398926 0.20971672236919403
+Loss_clf:0.174 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 267, Loss:0.1745 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1323
+0.14064359664916992 0.20453858375549316 0.20852522552013397
+Loss_clf:0.177 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 268, Loss:0.1767 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1394
+0.12906664609909058 0.20358143746852875 0.20251578092575073
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 269, Loss:0.1694 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1397
+0.12923362851142883 0.20631951093673706 0.20314358174800873
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 270, Loss:0.1702 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1375
+0.13325926661491394 0.1964997947216034 0.19513501226902008
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 271, Loss:0.1677 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1446
+0.1295802891254425 0.20225074887275696 0.20054210722446442
+Loss_clf:0.169 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 272, Loss:0.1689 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1426
+0.12692669034004211 0.19189061224460602 0.1948947161436081
+Loss_clf:0.163 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 273, Loss:0.1636 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1412
+0.13106738030910492 0.19631701707839966 0.19864965975284576
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 274, Loss:0.1677 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1447
+0.12939311563968658 0.1993391513824463 0.19805943965911865
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 275, Loss:0.1671 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1425
+0.1377989798784256 0.20747889578342438 0.20712623000144958
+Loss_clf:0.176 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 276, Loss:0.1758 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1406
+0.13470229506492615 0.1883738934993744 0.18903705477714539
+Loss_clf:0.165 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 277, Loss:0.1650 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1438
+0.13201792538166046 0.1932949274778366 0.196012482047081
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 278, Loss:0.1667 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1395
+0.14034101366996765 0.19710946083068848 0.204168900847435
+Loss_clf:0.174 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 279, Loss:0.1741 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1373
+0.12947779893875122 0.19760124385356903 0.19738343358039856
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 280, Loss:0.1667 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1401
+0.13048075139522552 0.19982914626598358 0.20438890159130096
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 281, Loss:0.1697 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1390
+0.12895846366882324 0.19652780890464783 0.19491250813007355
+Loss_clf:0.166 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 282, Loss:0.1658 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1431
+0.13469810783863068 0.19494402408599854 0.19540904462337494
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 283, Loss:0.1682 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1462
+0.1320502907037735 0.20745031535625458 0.2098870724439621
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 284, Loss:0.1734 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1437
+0.1439066231250763 0.20260892808437347 0.2062409371137619
+Loss_clf:0.177 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 285, Loss:0.1774 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1417
+0.13422791659832 0.19903293251991272 0.20252861082553864
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 286, Loss:0.1709 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1425
+0.13211922347545624 0.19313210248947144 0.19841425120830536
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 287, Loss:0.1671 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1472
+0.12953424453735352 0.18906886875629425 0.19042298197746277
+Loss_clf:0.163 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 288, Loss:0.1629 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1421
+0.13085369765758514 0.20388662815093994 0.20215310156345367
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 289, Loss:0.1703 Train: 0.9677, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1424
+0.12854459881782532 0.19580933451652527 0.19066904485225677
+Loss_clf:0.164 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 290, Loss:0.1646 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1432
+0.13651300966739655 0.1906014233827591 0.19293686747550964
+Loss_clf:0.167 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 291, Loss:0.1676 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1432
+0.13444817066192627 0.1949295997619629 0.19695109128952026
+Loss_clf:0.168 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 292, Loss:0.1682 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1417
+0.12922222912311554 0.19328053295612335 0.19247540831565857
+Loss_clf:0.164 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 293, Loss:0.1644 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1425
+0.12951752543449402 0.20769642293453217 0.20797190070152283
+Loss_clf:0.172 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 294, Loss:0.1717 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1454
+0.13272501528263092 0.20380881428718567 0.20407138764858246
+Loss_clf:0.171 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 295, Loss:0.1714 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1406
+0.13108102977275848 0.19999966025352478 0.2027101069688797
+Loss_clf:0.170 | Loss_dist:0.000 | Loss_kl:0.004
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 296, Loss:0.1701 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1410
+0.14128753542900085 0.20530499517917633 0.211986243724823
+Loss_clf:0.178 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 297, Loss:0.1780 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1403
+0.13918811082839966 0.20167426764965057 0.20115268230438232
+Loss_clf:0.173 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 298, Loss:0.1734 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1383
+0.13853447139263153 0.21183811128139496 0.21354150772094727
+Loss_clf:0.179 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-05.
+Epoch: 299, Loss:0.1788 Train: 0.9666, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1406
+0.1390300989151001 0.20822258293628693 0.20398551225662231
+Loss_clf:0.175 | Loss_dist:0.000 | Loss_kl:0.003
+Adjusting learning rate of group 0 to 1.0000e-06.
+Epoch: 300, Loss:0.1755 Train: 0.9656, Val:0.8240, Test: 0.8880, Time(s/epoch):0.1431
+[Run-1 score] {'train': 0.9655891553701773, 'val': 0.824, 'test': 0.888, 'loss': 0.18525774776935577}
+[Average Score] {'train': 0.9655891553701773, 'val': 0.824, 'test': 0.888} 
+[std Score] {'train': 0.0, 'val': 0.0, 'test': 0.0} 
+[Best Score] {'train': 0.9655891553701773, 'val': 0.824, 'test': 0.888, 'loss': 0.18525774776935577}
+[Best test run] 0
